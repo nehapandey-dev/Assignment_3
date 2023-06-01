@@ -18,7 +18,7 @@
 
 `❤️ Glimpse of project ❤️`
 
-![](/drag//public/drag%26drop.png)
+![img](/DragAndDrop//public//drag%26drop.png)
 
 
-![](/drag//public/d%26d.png)
+![img](/DragAndDrop//public//d%26d.png)
