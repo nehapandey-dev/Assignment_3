@@ -46,14 +46,14 @@ function DragAndDrop() {
         <DragDropContext onDragEnd={handleOnDragEnd}>
           <Droppable droppableId="characters" direction="horizontal">
             {(provided) => (
-              <ul {...provided.droppableProps} ref={provided.innerRef} className="flex justify-around">
+              <ul {...provided.droppableProps} ref={provided.innerRef} className="flex justify-around mt-32 h-52">
                 {characters.map(({ id, name }, index) => {
                   return (
                     <Draggable key={id} draggableId={id} index={index} >
                       {(provided) => (
-                        <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className=" lg:m-4 md:m-4 sm:m-2 lg:p-4 md:p-2 sm:p-2">
+                        <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className=" lg:m-4 md:m-4 sm:m-2 lg:p-4 md:p-2 sm:p-2 mt-10">
 
-                          <p className='text-center pt-2 border-dashed border-2 border-orange-400 lg:w-20 md:w-20 sm:w-20 lg:h-14 md:h-12 sm:h-12 lg:mt-10 md:mt-10 sm:mt-40 '>
+                          <p className='text-center pt-2 p-2 border-dashed border-2 border-orange-400 lg:w-20 md:w-20 sm:w-20 lg:h-14 md:h-12 sm:h-12 lg:mt-10 md:mt-10 sm:mt-40 '>
                             {name}
                           </p>
                         </li>
